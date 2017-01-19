@@ -4,6 +4,7 @@ steps:
     title: "Building image..."
     type: build
     image_name: containers101/reactstarterkit
+    tag: ${{CF_BRANCH}}
 
   LaunchComposition:
     type: launch-composition
