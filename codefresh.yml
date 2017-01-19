@@ -5,11 +5,7 @@ steps:
     type: build
     image_name: containers101/reactstarterkit
 
-  push_to_registry:
-    title: Pushing to Docker Registry
-    type: push
-    candidate: '${{build_step}}'
-    tag: '${{CF_BRANCH}}'
-    credentials:
-      username: '${{DOCKER_USER_NANE}}'
-      password: '${{DOCKER_PASSWORD}}'
+  LaunchComposition:
+    type: launch-composition
+    composition: run-composition
+    environment_name: 'ENV-${{CF_BRANCH}}'
