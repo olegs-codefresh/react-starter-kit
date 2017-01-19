@@ -9,7 +9,7 @@ steps:
   LaunchComposition:
     type: launch-composition
     composition_variables:
-      - "CF_BRANCH=${{CF_BRANCH}}"
+      - CF_BRANCH=${{CF_BRANCH}}
     composition:
     version: '2'
     services:
