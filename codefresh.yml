@@ -8,5 +8,9 @@ steps:
 
   LaunchComposition:
     type: launch-composition
-    composition: run-composition
+    composition:
+    version: '2'
+    services:
+      app:
+        image: containers101/reactstarterkit:${{CF_BRANCH}}
     environment_name: 'ENV-${{CF_BRANCH}}'
