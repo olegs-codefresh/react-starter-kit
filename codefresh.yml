@@ -10,7 +10,7 @@ steps:
     type: launch-composition
     composition_variables:
       - "CF_BRANCH=${{CF_BRANCH}}"
-    environment_name: '${{CF_BRANCH}}'
+    environment_name: 'ENV-${{CF_BRANCH}}'
     composition:
       version: '2'
       services:
